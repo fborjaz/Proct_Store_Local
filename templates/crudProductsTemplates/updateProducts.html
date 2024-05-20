@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/updateClient.css" rel="stylesheet">
+    <link href="../css/delete.css" rel="stylesheet">
+    <title>Actualizar Producto</title>
+</head>
+<body>
+    <div class="container text-center center-screen">
+        <h1 class="my-4">Actualizar Producto</h1>
+        <form id="updateForm" class="text-left">
+            <div class="form-group">
+                <label for="productId">ID del Producto:</label>
+                <input type="text" id="productId" name="productId" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Buscar Producto</button>
+        </form>
+        <form id="updateFormAfter" class="text-left" style="display: none;">
+            <p id="productUpdate"></p>
+            <div class="form-group">
+                <label for="descriptionProduct">Descripción:</label>
+                <input type="text" id="descriptionProduct" name="descriptionProduct" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="priceProduct">Precio:</label>
+                <input type="text" id="priceProduct" name="priceProduct" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="stockProduct">Stock:</label>
+                <input type="text" id="stockProduct" name="stockProduct" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Actualizar Producto</button>
+        </form>
+        <div class="product-list mt-4">
+            <h2>Productos existentes</h2>
+            <ul id="productList" class="list-group">
+                <!-- Generación de productos dinámicos -->
+            </ul>
+        </div>
+        <ul class="nav justify-content-center mt-4">
+            <li class="nav-item mr-2">
+                <a class="btn btn-secondary" href="../MenúProducts.html">
+                    <i class="fas fa-arrow-left"></i> Volver al menú
+                </a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="btn btn-secondary" href="../MenúPrimary.html">
+                    <i class="fas fa-home"></i> Menú principal
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://kit.fontawesome.com/bd0eea510a.js" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="module" src="../../crudActions/crudProducts/updateProducts.js"></script>
+</body>
+</html>

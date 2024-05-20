@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/delete.css" rel="stylesheet">
+    <title>Eliminar Producto</title>
+</head>
+<body>
+    <div class="container text-center center-screen">
+        <h1 class="my-4">Eliminar Producto</h1>
+        <form id="deleteForm" class="text-left">
+            <div class="form-group">
+                <label for="productId">Eliminar por ID:</label>
+                <input type="text" id="productId" name="productId" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Eliminar</button>
+        </form>
+        <div class="product-list mt-4">
+            <h2>Productos existentes</h2>
+            <ul id="productList" class="list-group">
+                <!--Generación de productos dinámicos-->
+            </ul>
+        </div>
+        <ul class="nav justify-content-center mt-4">
+            <li class="nav-item mr-2">
+                <a class="btn btn-secondary" href="../MenúProducts.html">
+                    <i class="fas fa-arrow-left"></i> Volver al menú
+                </a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="btn btn-secondary" href="../MenúPrimary.html">
+                    <i class="fas fa-home"></i> Menú principal
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://kit.fontawesome.com/bd0eea510a.js" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="module" src="../../crudActions/crudProducts/deleteProducts.js" ></script>
+</body>
+</html>

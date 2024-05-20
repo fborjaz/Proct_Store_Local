@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/updateClient.css" rel="stylesheet">
+    <link href="../css/delete.css" rel="stylesheet">
+    <title>Consulta de Clientes</title>
+</head>
+<body>
+    <div class="container text-center center-screen">
+        <h1 class="my-4">Consulta de Clientes</h1>
+        <form id="consultForm" class="text-left">
+            <div class="form-group">
+                <label for="selectConsult">Consultar:</label>
+                <select id="selectConsult" name="selectConsult" class="form-control" required>
+                    <option value="dni">Por DNI</option>
+                    <option value="allClients">Todos los clientes</option>
+                </select>
+            </div>
+        </form>
+        <form id="formDni" class="text-left" style="display: block;">
+            <div class="form-group">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Buscar</button>
+        </form>
+        <div class="user-list mt-4">
+            <h2>Consulta:</h2>
+            <ul id="usersList" class="list-group" style="display: none;">
+                <!--Generación de clientes dinamicos-->
+            </ul>
+        </div>
+        <ul class="nav justify-content-center mt-4">
+            <li class="nav-item mr-2">
+                <a class="btn btn-secondary" href="../MenúClients.html">
+                    <i class="fas fa-arrow-left"></i> Volver al menú
+                </a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="btn btn-secondary" href="../MenúPrimary.html">
+                    <i class="fas fa-home"></i> Menú principal
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://kit.fontawesome.com/bd0eea510a.js" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="module" src="../../crudActions/crudClients/consultClients.js" ></script>
+</body>
+</html>

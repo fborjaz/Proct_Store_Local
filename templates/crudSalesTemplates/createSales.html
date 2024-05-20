@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/Sale-Create.css" rel="stylesheet">
+    <title>Compra</title>
+</head>
+<body>
+    <div class="container text-center center-screen">
+        <h1 class="my-4">Compra</h1>
+        <form id="formClient" class="text-left">
+            <div class="form-group">
+                <label for="dni">DNI del cliente:</label>
+                <input type="text" id="dni" name="dni" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Buscar</button>
+        </form>
+        <div id="divLiClient" style="display: none;">
+            <ul>
+                <h3>Cliente: </h3>
+                <li id="clientLi"></li>
+            </ul>
+        </div>
+        <form id="formProduct" class="text-left" style="display: none;">
+            <div class="form-group text">
+                <label for="id">Ingresa el id del producto a comprar:</label>
+                <input type="number" id="id" name="id" class="form-control" required>
+            </div>
+                <button type="submit" class="btn btn-primary btn-block">Buscar</button>
+        </form>
+        <div id="divLi" style="display: none;">
+            <ul>
+                <h3>Producto a comprar: </h3>
+                <li id="productLi"></li>
+            </ul>
+        </div>
+        <form id="formProductAmount" class="text-left" style="display: none;">
+            <div class="form-group">
+                <label for="amount">Ingresa la cantidad del producto:</label>
+                <input type="number" id="amount" name="amount" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Comprar</button>
+        </form>
+        <ul class="nav justify-content-center mt-4">
+            <li class="nav-item mr-2">
+                <a class="btn btn-secondary" href="../MenúVentas.html" id="endSale">
+                    <i class="fas fa-arrow-left"></i> Terminar
+                </a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="btn btn-secondary" href="../MenúVentas.html">
+                    <i class="fas fa-arrow-left"></i> Volver a menú
+                </a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="btn btn-secondary" href="../MenúPrimary.html">
+                    <i class="fas fa-home"></i> Menú principal
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://kit.fontawesome.com/bd0eea510a.js" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="module" src="../../crudActions/crudSales/createSales.js"></script>
+</body>
+</html>

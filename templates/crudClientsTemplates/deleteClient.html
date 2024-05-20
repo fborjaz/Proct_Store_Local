@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/delete.css" rel="stylesheet">
+    <title>Eliminar Cliente</title>
+    <style>
+        .user-list-item {
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center center-screen">
+        <h1 class="my-4">Eliminar Cliente</h1>
+        <form id="deleteForm" class="text-left">
+            <div class="form-group">
+                <label for="dni">Elimina por DNI:</label>
+                <input type="text" id="dni" name="dni" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Eliminar</button>
+        </form>
+        <div class="user-list mt-4">
+            <h2>Usuarios existentes</h2>
+            <div id="usersList">
+                <div class="user-list-item">
+                    <h5>Nombre del cliente</h5>
+                    <p>DNI del cliente</p>
+                </div>
+            </div>
+        </div>
+        <ul class="nav justify-content-center mt-4">
+            <li class="nav-item mr-2">
+                <a class="btn btn-secondary" href="../MenúClients.html">
+                    <i class="fas fa-arrow-left"></i> Volver al menú
+                </a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="btn btn-secondary" href="../MenúPrimary.html">
+                    <i class="fas fa-home"></i> Menú principal
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/bd0eea510a.js" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="module" src="../../crudActions/crudClients/deleteClient.js" ></script>
+</body>
+</html>

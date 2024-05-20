@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/From.css" rel="stylesheet">
+    <title>Crear Cliente</title>
+</head>
+<body>
+
+    <div class="container text-center center-screen login-box">
+        <h1 class="my-4">Crear Cliente</h1>
+        <form id="fromClient" class="text-left">
+            <div class="form-group user-box">
+                <input type="text" id="name" name="name" class="form-control" required>
+                <label for="name">Nombre:</label>
+            </div>
+            <div class="form-group user-box">
+                <input type="text" id="last_name" name="last_name" class="form-control" required>
+                <label for="last_name">Apellido:</label>
+            </div>
+            <div class="form-group user-box">
+                <input type="text" id="dni" name="dni" class="form-control" pattern="\d{10}" title="El DNI debe tener exactamente 10 dígitos numéricos." required>
+                <label for="dni">DNI:</label>
+            </div>
+            <div class="form-group user-box">
+                <select id="client_type" name="client_type" class="form-control" required>
+                    <option value="" disabled selected>Seleccione el tipo de cliente</option>
+                    <option value="regular">Cliente Regular</option>
+                    <option value="vip">Cliente VIP</option>
+                </select>
+                <label for="client_type">Tipo de Cliente:</label>
+            </div>
+            <div class="form-group user-box">
+                <select id="card" name="card" class="form-control">
+                    <option value="" disabled selected>Seleccione el estado de la tarjeta</option>
+                    <option value="true">Activada</option>
+                    <option value="false">No Activada</option>
+                </select>
+                <label for="card">Tarjeta:</label>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary btn-block">Guardar Cliente</button>
+            </div>
+        </form>
+
+        <ul class="nav justify-content-center mt-4">
+            <li class="nav-item">
+                <a class="btn btn-secondary" href="../MenúClients.html">
+                    <i class="fas fa-arrow-left"></i> Volver al menú
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-secondary" href="../MenúPrimary.html">
+                    <i class="fas fa-home"></i> Menú principal
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://kit.fontawesome.com/bd0eea510a.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="module" src="../../crudActions/crudClients/createClients.js"></script>
+</body>
+</html>

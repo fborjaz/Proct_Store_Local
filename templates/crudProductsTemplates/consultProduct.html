@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/updateClient.css" rel="stylesheet">
+    <link href="../css/delete.css" rel="stylesheet">
+    <title>Consultar Productos</title>
+</head>
+<body>
+    <div class="container text-center center-screen">
+        <h1 class="my-4">Consultar Productos por ID</h1>
+        <form id="searchForm" class="text-left">
+            <div class="form-group">
+                <label for="searchInput">Buscar por ID:</label>
+                <input type="text" id="searchInput" name="searchInput" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+        <div class="product-list">
+            <h2>Productos</h2>
+            <div class="row" id="productList">
+                <!-- Aquí se generarán las tarjetas de los productos dinámicamente -->
+            </div>
+        </div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="btn btn-primary" href="../MenúProducts.html">
+                    <i class="fas fa-arrow-left"></i> Volver al menú
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-primary" href="../MenúPrimary.html">
+                    <i class="fas fa-home"></i> Menú principal
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script type="module" src="../../crudActions/crudProducts/consultProduct.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,131 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #212121; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    font-weight: 600;
+    color: #e8e8e8; /* Gris claro para los títulos */
+}
+
+.my-4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-control {
+    flex-grow: 1;
+    margin-right: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+
+.btn {
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Azul primario */
+    color: #fff;
+    border: none;
+    text-align: center;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Gris secundario */
+    color: #fff;
+    border: none;
+    white-space: nowrap;
+}
+
+.user-list-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.user-list {
+    border: 1px solid #ddd;
+    background-color: #444; /* Fondo más oscuro para la lista */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.user-list-item {
+    background-color: #555; /* Fondo gris oscuro para cada usuario */
+    border: none;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-item h5 {
+    color: #ddd; /* Gris claro para el nombre del usuario */
+}
+
+.user-list-item p {
+    color: #bbb; /* Gris más claro para el DNI */
+}
+
+
+/* Estilos para lista de navegación */
+.nav {
+    list-style: none; /* Elimina los bullets por defecto */
+    padding: 0;
+    display: flex; /* Distribuye los elementos en línea */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.nav-item {
+    margin: 0 15px; /* Mayor espacio entre elementos */
+}
+
+.nav-item a {
+    display: block; /* Para ocupar todo el espacio del elemento */
+    padding: 10px 20px; /* Más padding para los enlaces */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    text-decoration: none; /* Quita subrayado */
+    color: #fff;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.nav-item a:hover {
+    background-color: #555; /* Fondo más oscuro al pasar el ratón */
+}

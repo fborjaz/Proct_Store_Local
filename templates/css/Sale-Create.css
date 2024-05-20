@@ -1,0 +1,105 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna y legible */
+    background-color: #282c34;
+    color: #fff; /* Texto en color blanco */
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00d1ff; /* Color azul claro para el título */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el texto */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00d1ff; /* Borde azul claro */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente para inputs */
+    color: #fff;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #00d1ff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #00a5cf; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilos para las listas y títulos dentro de los divs */
+#divLiClient ul, #divLi ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#divLiClient li, #divLi li {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#divLiClient h3, #divLi h3 {
+    color: #00d1ff;
+    margin-bottom: 10px;
+}
+
+
+/* Estilos para lista de navegación */
+.nav {
+    list-style: none; /* Elimina los bullets por defecto */
+    padding: 0;
+    display: flex; /* Distribuye los elementos en línea */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.nav-item {
+    margin: 0 15px; /* Mayor espacio entre elementos */
+}
+
+.nav-item a {
+    display: block; /* Para ocupar todo el espacio del elemento */
+    padding: 10px 20px; /* Más padding para los enlaces */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    text-decoration: none; /* Quita subrayado */
+    color: #fff;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.nav-item a:hover {
+    background-color: #555; /* Fondo más oscuro al pasar el ratón */
+}

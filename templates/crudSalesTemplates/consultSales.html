@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/updateClient.css" rel="stylesheet">
+    <link href="../css/delete.css" rel="stylesheet">
+    <title>Consulta de ventas</title>
+</head>
+<body>
+    <div class="container text-center center-screen">
+        <h1 class="my-4">Consulta de ventas</h1>
+        <div class="form-group">
+            <label for="selectConsult">Consultar: </label>
+            <select id="selectConsult" name="selectConsult" class="form-control" required>
+                <option value="numFacture">Por id de factura</option>
+                <option value="allFacture">Todos las facturas</option>
+            </select>
+        </div>
+        <form id="formNumFactura" class="text-left">
+            <div class="form-group">
+                <label for="inputNumFactura">Numero de factura:</label>
+                <input type="number" id="inputNumFactura" name="numFactura" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+        <ul id="consultUl" class="list-group my-4">
+            <!-- Generación de facturas dinámicas -->
+        </ul>
+        <ul class="nav justify-content-center mt-4">
+            <li class="nav-item mr-2">
+                <a class="btn btn-secondary" href="../MenúVentas.html">
+                    <i class="fas fa-arrow-left"></i> Volver al menú
+                </a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="btn btn-secondary" href="../MenúPrimary.html">
+                    <i class="fas fa-home"></i> Menú principal
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://kit.fontawesome.com/bd0eea510a.js" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="module" src="../../crudActions/crudSales/consultSales.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
